@@ -18,6 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Provide a simple inline SVG favicon as a data URI to avoid processing the broken ICO file */}
+        <link
+          rel="icon"
+          href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23ff6b6b'/></svg>"
+        />
+      </head>
       <body className="antialiased">
         <ErrorReporter />
         <Script
